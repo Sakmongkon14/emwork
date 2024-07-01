@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>บันทึกรายการรายรับ/รายจ่าย</title>
+</head>
+<body>
+    <h2>บันทึกรายการรายรับ/รายจ่าย</h2>
+    <form action="expense.php" method="post">
+        <label for="type">ประเภท:</label><br>
+        <select name="type" id="type">
+            <option value="income">รายรับ</option>
+            <option value="expense">รายจ่าย</option>
+        </select><br><br>
+
+        <label for="item_name">ชื่อรายการใช้จ่าย:</label><br>
+        <input type="text" id="item_name" name="item_name" required><br><br>
+
+        <label for="amount">จำนวนเงิน:</label><br>
+        <input type="text" id="amount" name="amount" required><br><br>
+
+        <label for="expense_date">วันที่ใช้จ่าย:</label><br>
+        <input type="date" id="expense_date" name="expense_date" required><br><br>
+
+        <input type="submit" value="บันทึก">
+    </form>
+
+    <br>
+    <a href="show_data.php">รายการรายรับ/รายจ่าย</a>
+    <br>
+    <a href="report.php">แสดงรายงานรายการรายรับรายจ่ายตามเดือน</a>
+
+    
+    
+
+
+</body>
+</html>
+
+
